@@ -36,9 +36,9 @@ img {
 .container {
     margin-left: auto;
     margin-right: auto;
-    padding-left: 12px;
-    padding-right: 12px;
-    width: 1152px;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 1158px;
 }
 
 /* index.html */
@@ -47,7 +47,6 @@ img {
 
 header{
     display: flex;
-    min-height: 72px;
     border-bottom: 2px solid rgba(46, 47, 66, 0.08);
 }
 
@@ -60,6 +59,8 @@ header{
     text-decoration: none;
 
     margin-right: 77px;
+    padding-top: var(--card-set-gap);
+    padding-bottom: var(--card-set-gap);
 }
 
 .logo-span {
@@ -91,13 +92,21 @@ header>div {
     font-size: 16px;
     line-height: 1.5;
     text-decoration: none;
-    color: var(--main-text-color);      
+    color: var(--main-text-color); 
+    
+    padding-top: var(--card-set-gap);
+    padding-bottom: var(--card-set-gap);
 }
 
 .nav-link:hover,
 .nav-link:focus {
     color: var(--brand-color);
 }
+
+.current-page {
+    color: var(--brand-color);
+}
+
 .main-contact:not(:last-child) {
     margin-right: 40px;
 }
@@ -106,9 +115,12 @@ header>div {
     display: block;
     font-weight: 400;
     font-size: 16px;
-    line-height: 1.5px;
+    line-height: 1.5;
     color: var(--descr-text-color);
     text-decoration: none;
+    
+    padding-top: var(--card-set-gap);
+    padding-bottom: var(--card-set-gap);
 }
 
 .contact:hover,
@@ -124,7 +136,6 @@ header>div {
     background-color: var(--main-text-color);
     padding: 192px 0;
     text-align: center;
-    margin-bottom: 120px;
 }
 
 .hero-title {
@@ -163,14 +174,17 @@ header>div {
 
 /* SECTION Our principles */
 
+.principles {
+    padding-top: 120px;
+}
+
 .prin-list {
     display: flex;
     list-style-type: none;
-    margin-bottom: 120px;
 }
 
 .prin-list li {
-    width: 264px;
+    width: calc((100% - 72px) / 4);
 }
 
 .prin-list li:not(:last-child) {
@@ -193,6 +207,11 @@ header>div {
 
 /* SECTION What are we doing */
 
+.work {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
 .work-title {
     text-align: center;
     font-weight: 600;
@@ -204,7 +223,6 @@ header>div {
 .work-list {
     display: flex;
     list-style-type: none;
-    margin-bottom: 120px;
 }
 
 .work-list :not(:last-child) {
@@ -233,8 +251,7 @@ header>div {
 }
 
 .team-card {
-    width: 264px;
-    height: 380px;
+    width: calc((100% - 72px) / 4);
     background-color: var(--light-text-color);
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
     border-radius: 0px 0px 4px 4px;
@@ -244,8 +261,11 @@ header>div {
     margin-right: var(--card-set-gap);
 }
 
-.team-card> img{
-    margin-bottom: 32px;
+.card-descr {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    padding-left: 16px;
+    padding-right: 16px;
 }
 
 .team-subtitle {
@@ -293,8 +313,8 @@ footer {
 /* MAIN */
 
 .section-filter {
-    margin-top: 96px;
-    margin-bottom: 120px;
+    padding-top: 96px;
+    padding-bottom: 120px;
 }
 
 .filter {
@@ -317,8 +337,7 @@ footer {
     border: none;
     cursor: pointer;
 
-    min-width: 69px;
-    padding: 8px 16px;
+    padding: 12px 24px;
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
 }
@@ -338,7 +357,7 @@ footer {
     border: none;
     cursor: pointer;
 
-    padding: 8px 16px;
+    padding: 12px 24px;
     border: 1px solid #E7E9FC;
     border-radius: 4px;
 }
@@ -360,7 +379,7 @@ footer {
 }
 
 .port-card {
-    flex-basis: calc (100%/3-var(--card-set-gap));
+    flex-basis: calc (100% / 3 - var(--card-set-gap));
     margin-top: 48px;
     margin-left: var(--card-set-gap);
     border-bottom: 0.5px solid var(--bgrd-color);

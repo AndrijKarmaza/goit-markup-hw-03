@@ -18,7 +18,7 @@
             <nav class="main-nav">
                 <a href="./index.html" class="logo"><span class="logo-span">WEB</span>STUDIO</a>
                 <ul class="header-list">
-                    <li class="item"><a href="./index.html" class="nav-link">Studio</a></li>
+                    <li class="item"><a href="./index.html" class="nav-link current-page">Studio</a></li>
                     <li class="item"><a href="./portfolio.html" class="nav-link">Portfolio</a></li>
                     <li class="item"><a href="#" class="nav-link">Contacts</a></li>
                 </ul>
@@ -34,64 +34,88 @@
     <main>
 
         <section class="hero">
-            <h1 class="hero-title">Effective Solutions for Your Business</h1>
-            <button type="button" class="hero-btn">Order Service</button>
+            <div class="container">
+                <h1 class="hero-title">Effective Solutions for Your Business</h1>
+                <button type="button" class="hero-btn">Order Service</button>
+            </div>
+            
         </section>
 
-        <section class="container">
-            <h2 hidden>Our principles</h2> <!-- сховав заголовок поки не дізнаюсь як це робити правильно -->
-            <ul class="prin-list">
-                <li>
-                    <h3 class="prin-title">Strategy</h3>
-                    <p class="prin-desc">Our goal is to identify the business problem to walk away with the perfect and creative solution.</p>
-                </li>
-                <li>
-                    <h3 class="prin-title">Punctuality</h3>
-                    <p class="prin-desc">Bring the key message to the brand's audience for the best price within the shortest possible time.</p>
-                </li>
-                <li>
-                    <h3 class="prin-title">Diligence</h3>
-                    <p class="prin-desc">Research and confirm brands that present the strongest digital growth opportunities and minimize risk.</p>
-                </li>
-                <li>
-                    <h3 class="prin-title">Technologies</h3>
-                    <p class="prin-desc">Design practice focused on digital experiences. We bring forth a deep passion for problem-solving.s</p>
-                </li>
-            </ul>
+        <section class="principles">
+            <div class="container">
+                <h2 hidden>Our principles</h2> <!-- сховав заголовок поки не дізнаюсь як це робити правильно -->
+                <ul class="prin-list">
+                    <li>
+                        <h3 class="prin-title">Strategy</h3>
+                        <p class="prin-desc">Our goal is to identify the business problem to walk away with the perfect and creative
+                            solution.</p>
+                    </li>
+                    <li>
+                        <h3 class="prin-title">Punctuality</h3>
+                        <p class="prin-desc">Bring the key message to the brand's audience for the best price within the shortest
+                            possible time.</p>
+                    </li>
+                    <li>
+                        <h3 class="prin-title">Diligence</h3>
+                        <p class="prin-desc">Research and confirm brands that present the strongest digital growth opportunities and
+                            minimize risk.</p>
+                    </li>
+                    <li>
+                        <h3 class="prin-title">Technologies</h3>
+                        <p class="prin-desc">Design practice focused on digital experiences. We bring forth a deep passion for
+                            problem-solving.s</p>
+                    </li>
+                </ul>
+            </div>
         </section>
 
-        <section class="container">
-            <h2 class="work-title">What are we doing</h2>
-            <ul class="work-list">
-                <li><img src="./images/monitor.jpg" alt="website on a computer" width="360"></li>
-                <li><img src="./images/mobile.jpg" alt="website on a mobile phone" width="360"></li>
-                <li><img src="./images/application.jpg" alt="mobile phone application" width="360"></li>
-            </ul>
+        <section class="work">
+            <div class="container">
+                <h2 class="work-title">What are we doing</h2>
+                <ul class="work-list">
+                    <li><img src="./images/monitor.jpg" alt="website on a computer" width="360"></li>
+                    <li><img src="./images/mobile.jpg" alt="website on a mobile phone" width="360"></li>
+                    <li><img src="./images/application.jpg" alt="mobile phone application" width="360"></li>
+                </ul>
+            </div>
+            
         </section>
 
         <section class="team">
             <div class="container">
                 <h2 class="team-title">Our Team</h2>
                 <ul class="team-list">
+
                     <li class="team-card">
                         <img src="./images/our_team/mark_guerrero.jpg" alt="Mark's photo" width="264">
-                        <h3 class="team-subtitle">Mark Guerrero</h3>
-                        <p class="team-desc">Product Designer</p>
+                        <div class="card-descr">
+                            <h3 class="team-subtitle">Mark Guerrero</h3>
+                            <p class="team-desc">Product Designer</p>
+                        </div>
                     </li>
+
                     <li class="team-card">
                         <img src="./images/our_team/tom_ford.jpg" alt="Tom's photo" width="264">
-                        <h3 class="team-subtitle">Tom Ford</h3>
-                        <p class="team-desc">Frontend Developer</p>
+                        <div class="card-descr">
+                            <h3 class="team-subtitle">Tom Ford</h3>
+                            <p class="team-desc">Frontend Developer</p>
+                        </div>                        
                     </li>
+
                     <li class="team-card">
                         <img src="./images/our_team/camilia_garcia.jpg" alt="Camila's photo" width="264">
-                        <h3 class="team-subtitle">Camila Garcia</h3>
-                        <p class="team-desc">Marketing</p>
+                        <div class="card-descr">
+                            <h3 class="team-subtitle">Camila Garcia</h3>
+                            <p class="team-desc">Marketing</p>
+                        </div>                        
                     </li>
+                    
                     <li class="team-card">
                         <img src="./images/our_team/daniel_wilson.jpg" alt="Daniel's photo" width="264">
-                        <h3 class="team-subtitle">Daniel Wilson</h3>
-                        <p class="team-desc">UI Designer</p>
+                        <div class="card-descr">
+                            <h3 class="team-subtitle">Daniel Wilson</h3>
+                            <p class="team-desc">UI Designer</p>
+                        </div>                        
                     </li>
                 </ul>
 
